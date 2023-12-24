@@ -1,0 +1,18 @@
+PROMPT="[AlexanderZakharov in %F{green}%~%f] $ "
+
+alias ls="gls"
+alias arch-pc="cd ~/work/study/2023-2024/Архитектура\ компьютера/arch-pc"
+
+flushDNScache(){
+    sudo dscacheutil -flushcache;
+    sudo killall -HUP mDNSResponder;
+}
+
+mkcd(){
+    mkdir -p $1;
+    cd $1;
+}
+
+PATH=$PATH:/usr/local/opt/python@3.11/libexec/bin
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
