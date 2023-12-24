@@ -1,0 +1,10 @@
+" Load plugin settings:
+source ~/.vim/vimPlugrc.vim
+" Load mappings:
+source ~/.vim/vimMappings.vim
+" Load custom functions:
+source ~/.vim/vimFunctions.vim
+" Load custom abbreviations:
+source ~/.vim/vimAbbreviations.vim
+" Load general settings:
+source ~/.vim/vimGeneral.vim
