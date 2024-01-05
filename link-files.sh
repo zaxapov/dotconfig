@@ -1,2 +1,2 @@
 mkdir -p ~/.vim;
-ln -s ~/vim-repository/vim/vim* ~/.vim/;
+ln -s ~/dotconfig/vim/vim* ~/.vim/;

@@ -26,7 +26,7 @@ set wildmenu " cmd line completion
 set wildmode=list:full,full " cmd line completion style
 
 " GVIM SETTINGS
-" -----------------------------------------------------------------------------
+" ------------------------------------------
 set guifont=Input_Mono:h14 " set font for GVim
 set guioptions=c  " disable popup dialog windows
 set guioptions-=r " disable rigt scrollbar
@@ -34,7 +34,7 @@ set guioptions-=l " disable left scrollbar
 set guioptions-=b " disable bottom scrollbar
 
 " TEXT EDITING SETTINGS
-" -----------------------------------------------------------------------------
+" ------------------------------------------
 syntax on     " colorful words
 set bg=dark
 colors wildcharm
@@ -60,7 +60,7 @@ set wrap linebreak    " wrap lines + wrap lines at word (not symbol)
 set display+=lastline " always try to show a paragraph's last line
 
 " SEARCH OPTIONS
-" -----------------------------------------------------------------------------
+" ------------------------------------------
 " Search mappings are defined in ~/.vim/vimMappings.vim
 set hlsearch   " highlight all search results
 set smartcase  " enable smart-case search
@@ -68,7 +68,7 @@ set ignorecase " always case-insensitive
 set incsearch  " searches for strings incrementally
 
 " IDENTATION OPTIONS
-" -----------------------------------------------------------------------------
+" ------------------------------------------
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -79,14 +79,14 @@ set autoindent  " auto-indent new lines
 set smarttab    " enable smart-tabs
 
 " DISABLE VISUALBELL
-" -----------------------------------------------------------------------------
+" ------------------------------------------
 set noerrorbells visualbell t_vb=
 if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
 " CUSTOM STATUSLINE
-" -----------------------------------------------------------------------------
+" ------------------------------------------
 set laststatus=2 " statusline is enabled all the time
 set statusline=
 set statusline+=\ %f
@@ -100,7 +100,7 @@ set statusline+=\ %p%%
 set statusline+=\ %l:%c\ 
 
 " VIM UNDO DIRECTORY
-" -----------------------------------------------------------------------------
+" ------------------------------------------
 set undolevels=1000 " Number of undo levels
 
 if !isdirectory($HOME."/.vim-undo-dir")
